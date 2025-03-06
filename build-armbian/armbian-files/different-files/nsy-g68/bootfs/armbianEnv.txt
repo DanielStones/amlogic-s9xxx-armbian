@@ -9,4 +9,3 @@ overlays=
 extraargs=
 extraboardargs=net.ifnames=0 max_loop=128
 docker_optimizations=on
-usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u

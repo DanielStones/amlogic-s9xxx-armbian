@@ -1,5 +1,6 @@
 LABEL Armbian
-  LINUX /Image
-  INITRD /uInitrd
-  FDT /dtb/rockchip/rk3399-king3399.dtb
-  APPEND root=LABEL=ROOTFS console=ttyS2,1500000 console=tty1 no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0 max_loop=128 bootsplash.bootfile=bootsplash.armbian
+  LINUX /vmlinuz-6.6.80
+  INITRD /uInitrd-6.6.80
+  FDT /dtb/rockchip/rk3568-nsy.dtb
+  APPEND root=/dev/mmcblk0p2 rootflags=data=writeback rw rootfstype=ext4 console=ttyS2,1500000 console=tty1 no_console_suspend consoleblank=0  loglevel=8 fsck.fix=yes fsck.repair=yes net.ifnames=0 max_loop=128 bootsplash.bootfile=bootsplash.armbian
+
